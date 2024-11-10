@@ -52,13 +52,13 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>LEVEL</th><th>TITLE</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>LEVEL</th><th>TITLE</th><th>TYPE</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
-                            obj_sep.html("<td colspan='2'>" + "<b>" + mark + x + " (" + count +
+                            obj_sep.html("<td colspan='3'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
@@ -78,12 +78,15 @@
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+
+                     // Type
+                    $("<td width='10%'>" + mark + x + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
                 }
                  $("</tbody>").appendTo(obj);
                  if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='2'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='3'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                  }
             }
