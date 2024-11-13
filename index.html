@@ -31,7 +31,7 @@
         </div>
 
 
-        <!--ここから難易度表本体-->
+       <!--ここから難易度表本体-->
         <div>
             <table class="table table-light table-striped table-hover" id="table_int">
             </table>
@@ -71,13 +71,14 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='10%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title (LR2IR)
-                    $("<td width='95%'>" +
+                    $("<td width='90%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    str.appendTo(obj);
                     count++;
                 }
                  $("</tbody>").appendTo(obj);
