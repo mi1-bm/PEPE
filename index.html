@@ -27,7 +27,7 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>1mi (https://x.com/ug3fw)
+            <p>1mi(https://x.com/ug3fw)
         </div>
 
 
@@ -71,13 +71,14 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='10%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title (LR2IR)
-                    $("<td width='95%'>" +
+                    $("<td width='90%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    str.appendTo(obj);
                     count++;
                 }
                  $("</tbody>").appendTo(obj);
