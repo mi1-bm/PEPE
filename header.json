@@ -1,5 +1,5 @@
-﻿{
-"name" : "導かれ臨終",
-"symbol" : "臨終",
-"data_url" : "https://script.google.com/macros/s/AKfycbwRHGXzICMozn9c6I_5fUs_6IDWtbDc5ynP2jTTWvsDQNiOZLDz7AMz2Q1GXVy2yGk/exec"
+{ "name": "gachimijoy",
+  "symbol": "双",
+  "data_url": "./score.json",
+  "level_order": [ "0","1","2","3","4","5","6","7","?"]
 }
