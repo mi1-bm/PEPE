@@ -50,7 +50,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<tr height='20' style='color:white;background-color:#666666'><td align='left'>LV</td><td align='left'>TITLE</td><td align='left'>ARTIST</td></tr>")
+                $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>TITLE</td><td align='center'>ARTIST</td></tr>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -68,9 +68,6 @@
 
                     var str = $("<tr></tr>");
 
-                    // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
-
                     // Title
                     $("<td width='50%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
@@ -78,7 +75,7 @@
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='45%'>" + info[i].artist + "</td>").appendTo(str);
+                    $("<td width='50%'>" + info[i].artist + "</td>").appendTo(str);
 
                     str.appendTo(obj);
                     count++;
