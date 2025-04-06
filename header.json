@@ -3,6 +3,7 @@
   "data_url": "./score.json",
   "level_order": [ "0","1","2","3","4","5","6","7","?"],
   "course":[ 
+    [
       { 
         "name": "Gachimijoy段位認定 初級",
         "constraint": ["MIRROR","GAUGE_LR2"],
@@ -44,4 +45,5 @@
         "md5":["ea78eece8c6a01ff9ac2061b35fca615","795a49f0f1af941dba965d946ca31c6f","fed59d3b700499c9207c4995d160cc9a","8d9f4e2a5d0b87a03986fd96bc085c63"]
       }
     ]
+  ]
 }
